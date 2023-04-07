@@ -1,0 +1,8 @@
+$main-white: #ffffff;
+$main-pink: #ef428c;
+
+@mixin zero-top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
