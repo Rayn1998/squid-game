@@ -1,0 +1,40 @@
+@import "../../../styles/base.scss";
+
+.topSideMenu__wrapper {
+  display: flex;
+  gap: 30px;
+
+  .topSideMenu__socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 0.6;
+  }
+
+  .topSideMenu__menu {
+    opacity: 0.6;
+    position: relative;
+  }
+
+  .topSideMenu__list {
+    animation: opac 0.3s ease-in-out;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    border-radius: 5px;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: $main-white;
+  }
+
+  .topSideMenu__list-item {
+    text-decoration: none;
+    color: $black;
+  }
+}

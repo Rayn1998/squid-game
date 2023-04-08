@@ -26,11 +26,32 @@ p {
 // APP
 @import url("../App.scss");
 
+// LAYOUT
+@import url("../components/Layout/Layout.scss");
+
 // HEADER
 @import url("../components/Header/header.scss");
 
 // TOPMENU
-@import url("../components/TopMenu/TopMenu.scss");
+@import url("../components/Header/TopMenu/TopMenu.scss");
 
 // TOPSIDEMENU
-@import url("../components/TopSideMenu/TopSideMenu.scss");
+@import url("../components/Header/TopSideMenu/TopSideMenu.scss");
+
+// CAROUSEL
+@import url("../components/Carousel/Carousel.scss");
+
+// CONTROLS
+@import url("../components/Carousel/Controls/Controls.scss");
+
+// SLIDES
+@import url("../components/Carousel/Slides/Slides.scss");
+
+// SLIDE
+@import url("../components/Carousel/Slide/Slide.scss");
+
+// PLAYBUTTON
+@import url("../components/Carousel/PlayButton/PlayButton.scss");
+
+// POPUP
+@import url("../components/Popup/Popup.scss");

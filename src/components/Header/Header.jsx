@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../assets/images/Logo.png";
-import TopMenu from "../TopMenu/TopMenu";
-import TopSideMenu from "../TopSideMenu/TopSideMenu";
+import TopMenu from "./TopMenu/TopMenu";
+import TopSideMenu from "./TopSideMenu/TopSideMenu";
 
 const Header = () => {
   return (

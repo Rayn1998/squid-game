@@ -1,5 +1,5 @@
 import React from "react";
-import netflixLogo from "../../assets/images/netflix-logo.png";
+import netflixLogo from "../../../assets/images/netflix-logo.png";
 
 const TopMenu = () => {
   const list = ["RULES OF THE GAME", "", "LIVE", "PLAY", "DIE"];

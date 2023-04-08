@@ -1,8 +1,31 @@
 $main-white: #ffffff;
 $main-pink: #ef428c;
+$back-pink: #3a0b20c2;
+$black: #00000092;
+
+@mixin mar-pad-zero {
+    margin: 0;
+    padding: 0;
+}
 
 @mixin zero-top-left {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+
+
+@keyframes opac {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

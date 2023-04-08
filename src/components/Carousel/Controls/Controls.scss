@@ -1,0 +1,25 @@
+@import '../../../styles/base.scss';
+
+.controls {
+
+  button {
+    @include mar-pad-zero;
+    color: $main-white;
+    background-color: transparent;
+    border-radius: 10px;
+    border: transparent;
+    
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.btn-active {
+  cursor: pointer;
+}
+
+.btn-inactive {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
