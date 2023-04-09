@@ -1,11 +1,18 @@
-import Carousel from "../Carousel/Carousel";
-import Header from "../Header/Header";
+import { Routes, Route } from 'react-router-dom';
 
-const Layout = ({ props }) => {
+import Header from "../Header/Header";
+import Main from "../Main/Main";
+import Admin from "../Admin/Admin";
+
+const Layout = ({children}) => {
   return (
     <div className="layout">
       <Header />
-      <Carousel click={props.popupHandle} />
+      <Routes>
+        <Route path='/' element={<Main/>} />
+        <Route path='/admin' element={<Admin />} />
+      </Routes>
+      {children}
     </div>
   );
 };

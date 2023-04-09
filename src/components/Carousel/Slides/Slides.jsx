@@ -2,7 +2,7 @@ import React from "react";
 import Slide from "../Slide/Slide";
 
 const Slides = ({ props }) => {
-  const { slides, currentIdx, setCurrentIdx, click } = props;
+  const { series, currentIdx, setCurrentIdx } = props;
 
   const playHandler = (idx) => {
     setCurrentIdx(idx);
@@ -18,7 +18,7 @@ const Slides = ({ props }) => {
         transition: "all 0.3s ease-in-out",
       }}
     >
-      {slides.map((slide, i) => {
+      {series.map((slide, i) => {
         let isActive = i === currentIdx;
 
         return (
@@ -26,8 +26,7 @@ const Slides = ({ props }) => {
             slide={slide}
             key={i}
             i={i}
-            click={click}
-            clickHandler={function () {
+            click={() => {
               playHandler(i);
             }}
             isActive={isActive}

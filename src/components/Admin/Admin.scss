@@ -1,0 +1,107 @@
+$bg-color: #1b1313d8;
+$bg-item: rgb(128, 128, 128);
+$border-radius: 15px;
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 80px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  .series-list {
+    @include flex-column();
+    list-style: none;
+    width: 100%;
+    padding: 50px 40px;
+    margin: 0;
+    background-color: $bg-color;
+    border-radius: $border-radius;
+    gap: 30px;
+  }
+
+  .list-item {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $bg-item;
+    padding: 10px;
+    border-radius: 0.5rem;
+  }
+
+  .list-item__img {
+    width: 100px;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.466);
+  }
+
+  .list-item__btn {
+    padding: 5px;
+    width: auto;
+    background-color: rgb(72, 46, 64);
+    border: none;
+    border-radius: 0.3rem;
+    color: #bdbdbd;
+  }
+
+  .list-item__text {
+    white-space: nowrap;
+    text-decoration: underline;
+  }
+
+  .admin__form-wrapper {
+    @include flex-column();
+    border-radius: $border-radius;
+    width: 100%;
+    padding: 50px 40px;
+    background-color: $bg-color;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .admin__form {
+    @include flex-column();
+    gap: 10px;
+  }
+
+  .admin__form-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(141, 141, 141);
+    outline: none;
+    color: #bdbdbd;
+
+    &:active,
+    &:focus {
+      outline: 3px solid rebeccapurple;
+      border-radius: 0.3rem;
+    }
+  }
+
+  .admin__form-btn {
+    position: relative;
+    background-color: rebeccapurple;
+    border: none;
+    color: #bdbdbd;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+    }
+
+    &:active {
+      transform: translateY(1px);
+    }
+  }
+}
