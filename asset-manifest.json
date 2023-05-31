@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/squid-game/static/css/main.35176618.css",
+    "main.js": "/squid-game/static/js/main.1de2fea9.js",
+    "static/media/Background.png": "/squid-game/static/media/Background.9f20248f68d0f83a6daa.png",
+    "static/media/Montserrat-SemiBold.ttf": "/squid-game/static/media/Montserrat-SemiBold.62b8eee010e3957d425f.ttf",
+    "index.html": "/squid-game/index.html",
+    "main.35176618.css.map": "/squid-game/static/css/main.35176618.css.map",
+    "main.1de2fea9.js.map": "/squid-game/static/js/main.1de2fea9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35176618.css",
+    "static/js/main.1de2fea9.js"
+  ]
+}
